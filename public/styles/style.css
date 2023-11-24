@@ -10,14 +10,16 @@ body {
 .container {
   max-width: 1440px;
   margin-left: auto;
-  margin-right: auto; }
+  margin-right: auto;
+  padding: 1rem; }
 
 header {
-  padding: 1.5rem 2rem; }
+  padding: 1.5rem 2rem;
+  box-shadow: 0px 5px 0px 0px #8d8d8d0d; }
 
 header .nav {
   display: flex;
-  align-items: baseline;
+  align-items: center;
   justify-content: space-between; }
 
 header .nav ul {
@@ -29,10 +31,10 @@ header .nav a {
 header .nav__logoWrapper {
   display: flex;
   align-items: center;
-  gap: 0.75rem; }
+  gap: 0.25rem; }
 
 header .nav__logoWrapper h1 {
-  font-size: 2.25rem;
+  font-size: 2rem;
   color: black;
   font-weight: 700; }
 
@@ -40,7 +42,7 @@ header .nav__logoWrapper h1 span {
   color: #42b883; }
 
 header .nav__logo {
-  width: 45px; }
+  width: 35px; }
 
 header .nav__list {
   display: flex;
@@ -50,4 +52,11 @@ header .nav__list {
 
 header .nav__list a {
   color: black;
-  padding: .25rem; }
+  padding: .5rem; }
+
+.hero {
+  text-align: center;
+  margin-top: 5rem;
+  font-size: 3rem;
+  font-weight: 800;
+  letter-spacing: -2px; }

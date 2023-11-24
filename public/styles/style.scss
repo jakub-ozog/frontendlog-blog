@@ -17,15 +17,16 @@ body {
     max-width: 1440px;
     margin-left: auto;
     margin-right: auto;
-    // padding: 1rem;
+    padding: 1rem;
 }
 
 header {
     padding: 1.5rem 2rem;
+    box-shadow: 0px 5px 0px 0px #8d8d8d0d;
 
     .nav {
         display: flex;
-        align-items: baseline;
+        align-items: center;
         justify-content: space-between;
 
         ul {
@@ -39,10 +40,10 @@ header {
         &__logoWrapper {
             display: flex;
             align-items: center;
-            gap: 0.75rem;
+            gap: 0.25rem;
 
             h1 {
-                font-size: 2.25rem;
+                font-size: 2rem;
                 color: $Black;
                 font-weight: 700;
 
@@ -53,7 +54,7 @@ header {
         }
 
         &__logo {
-            width: 45px;
+            width: 35px;
         }
 
         &__list {
@@ -61,10 +62,20 @@ header {
             align-items: center;
             justify-content: space-evenly;
             gap: 1rem;
+
             a {
                 color: $Black;
-                padding: .25rem;
+                padding: .5rem;
             }
         }
     }
+
+}
+
+.hero {
+    text-align: center;
+    margin-top: 5rem;
+    font-size: 3rem;
+    font-weight: 800;
+    letter-spacing: -2px;
 }
