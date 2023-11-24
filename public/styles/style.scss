@@ -1,3 +1,7 @@
+$White: hsl(0, 0%, 100%);
+$Black: hsl(0, 0, 0);
+$VueGreen: hsl(153, 47%, 49%);
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -5,5 +9,62 @@
 }
 
 body {
-    background-color: salmon;
+    background-color: $White;
+    font-family: 'Manrope', sans-serif;
+}
+
+.container {
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+    // padding: 1rem;
+}
+
+header {
+    padding: 1.5rem 2rem;
+
+    .nav {
+        display: flex;
+        align-items: baseline;
+        justify-content: space-between;
+
+        ul {
+            list-style-type: none;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        &__logoWrapper {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+
+            h1 {
+                font-size: 2.25rem;
+                color: $Black;
+                font-weight: 700;
+
+                span {
+                    color: $VueGreen;
+                }
+            }
+        }
+
+        &__logo {
+            width: 45px;
+        }
+
+        &__list {
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            gap: 1rem;
+            a {
+                color: $Black;
+                padding: .25rem;
+            }
+        }
+    }
 }
