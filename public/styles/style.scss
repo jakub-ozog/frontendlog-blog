@@ -2,7 +2,7 @@ $White: hsl(0, 0%, 100%);
 $LightGrey: hsl(0, 0%, 79%);
 $Grey: hsl(0, 0%, 65%);
 $Black: hsl(0, 0, 0);
-$VueGreen: hsl(153, 47%, 49%);
+$VueGreen: #42b883;
 
 * {
     box-sizing: border-box;
@@ -89,9 +89,131 @@ header {
         font-size: 1.25rem;
         color: $LightGrey;
         font-weight: 600;
-        
+
         span {
             color: $VueGreen;
+        }
+    }
+}
+
+.latest {
+    margin-top: 5rem;
+    background-color: #f9f9f9;
+    padding: 1rem;
+
+    &__header {
+        font-size: 1.75rem;
+    }
+
+
+
+    &__blogsWrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 15px;
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+    }
+
+
+    &__blogItem {
+        background-color: $White;
+        padding: 1rem;
+
+        &:nth-child(1) {
+            grid-row: 1;
+            grid-column: 1 / span 2;
+        }
+
+        &:nth-child(2) {
+            grid-row: 2;
+            grid-column: 1;
+        }
+
+        &:nth-child(3) {
+            grid-row: 2;
+            grid-column: 2;
+        }
+           
+        
+    }
+
+    &__details {
+        display: flex;
+        gap: 2rem;
+        align-items: center;
+        margin-top: 1rem;
+        margin-bottom: 1.5rem;
+        font-size: .75rem;
+    }
+
+    &__imgWrapper {
+        width: 100%;
+        aspect-ratio: 4 / 1;
+        overflow: hidden;
+    }
+
+    &__thumb {
+        width: 100%;
+        height: 100%;
+        object-position: center;
+        object-fit: cover;
+    }
+
+    &__date,
+    &__readTime {
+        display: flex;
+        align-items: center;
+        gap: .5rem;
+
+        img {
+            width: 18px;
+        }
+    }
+
+
+    &__title {
+        font-size: 1.5rem;
+        margin-bottom: .5rem;
+        font-weight: 700;
+    }
+
+    &__desc {
+        color: #424242;
+        font-weight: 600;
+    }
+
+    &__about {
+        display: flex;
+        gap: 2rem;
+        align-items: center;
+        margin-top: 2rem;
+    }
+
+    &__author {
+        display: flex;
+        align-items: center;
+        gap: .25rem;
+
+        img {
+            border-radius: 50%;
+            width: 18px;
+        }
+
+        p {
+            font-size: 0.75rem;
+            font-weight: 700;
+        }
+    }
+
+    &__category {
+        p {
+            padding: .25rem .5rem;
+            background-color: rgb(245, 245, 13);
+            color: black;
+            border-radius: 10px;
+            font-weight: 700;
+            font-size: 0.75rem;
         }
     }
 }
