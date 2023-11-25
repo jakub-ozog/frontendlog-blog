@@ -19,7 +19,7 @@ body {
 
 .container {
     max-width: 1440px;
-    margin: 0 auto;
+    margin: 75px auto;
 }
 
 header {
@@ -195,7 +195,7 @@ header {
 
         &:hover {
             color: #215B63;
-        }
+        }   
     }
 
     &__title {
@@ -244,4 +244,8 @@ header {
             font-size: 0.75rem;
         }
     }
+}
+
+.is-hidden {
+    display: none;
 }

@@ -15,7 +15,7 @@
     <link rel="apple-touch-icon" href="/assets/icons/favico/apple-touch-icon.png">
     <link rel="manifest" href="/assets/icons/favico/site.webmanifest">
     <meta name="theme-color" content="#ffffff">
-    <script src="/scripts/main.js"></script>
+    <script defer src="/scripts/main.js"></script>
 </head>
 
 <body>
@@ -34,139 +34,176 @@
         </nav>
     </header>
     <div class="container">
-        <main>
-            <section class="hero">
-                <h1 class="hero__title">Blog o frontendzie i nie tylko!</h1>
-                <h2 class="hero__subtitle">FrontendLog - czyli moja droga do nauki programowania a konkretniej frontendu
-                    w formie zwięzłych
-                    artykułów. <span>Enjoy!</span></h2>
+
+
+        <div id="home" class="page">
+            <main id="home" class="">
+                <section class="hero">
+                    <h1 class="hero__title">Blog o frontendzie i nie tylko!</h1>
+                    <h2 class="hero__subtitle">FrontendLog - czyli moja droga do nauki programowania a konkretniej
+                        frontendu
+                        w formie zwięzłych
+                        artykułów. <span>Enjoy!</span></h2>
+                </section>
+            </main>
+
+
+
+            <section id="home" class="latest ">
+                <h3 class="latest__header">Ostatnie posty</h3>
+                <div class="latest__blogsWrapper">
+                    <article class="latest__blogItem">
+                        <!-- <div class="latest__imgWrapper">
+                        <img class="latest__thumb" src="/assets/thumbs/5.jpg" alt="">
+                    </div> -->
+                        <div class="latest__details">
+                            <div class="latest__date">
+                                <img src="/assets/icons/calendar.svg" alt="">
+                                <p>
+                                    25 Listopada, 2023
+                                </p>
+                            </div>
+                            <div class="latest__readTime">
+                                <img src="/assets/icons/clock.svg" alt="">
+                                <p>
+                                    03 min read
+                                </p>
+                            </div>
+                        </div>
+                        <a href="#article-1">
+                            <h4 class="latest__title">Operatory porównania (niejawna konwersja typów podczas
+                                porównania), falsy
+                                values, truthy values
+                            </h4>
+                        </a>
+                        <h5 class="latest__desc">Jak działają operatory porównania i na co musimy uważać podczas
+                            porównywania ze sobą dwóch
+                            wartości.</h5>
+
+                        <div class="latest__about">
+                            <div class="latest__author">
+                                <img src="/assets/icons/user.svg" alt="">
+                                <p>Jakub</p>
+                            </div>
+
+                            <div class="latest__category">
+                                <p>JavaScript</p>
+                            </div>
+                        </div>
+                    </article>
+
+
+                    <article class="latest__blogItem">
+                        <!-- <div class="latest__imgWrapper">
+                        <img class="latest__thumb" src="/assets/thumbs/5.jpg" alt="">
+                    </div> -->
+                        <div class="latest__details">
+                            <div class="latest__date">
+                                <img src="/assets/icons/calendar.svg" alt="">
+                                <p>
+                                    25 Listopada, 2023
+                                </p>
+                            </div>
+                            <div class="latest__readTime">
+                                <img src="/assets/icons/clock.svg" alt="">
+                                <p>
+                                    03 min read
+                                </p>
+                            </div>
+                        </div>
+
+                        <a href="#article-2">
+                            <h4 class="latest__title">Operatory porównania (niejawna konwersja typów podczas
+                                porównania), falsy
+                                values, truthy values
+                            </h4>
+                        </a>
+                        <h5 class="latest__desc">Jak działają operatory porównania i na co musimy uważać podczas
+                            porównywania ze sobą dwóch
+                            wartości.</h5>
+
+                        <div class="latest__about">
+                            <div class="latest__author">
+                                <img src="/assets/icons/user.svg" alt="">
+                                <p>Jakub</p>
+                            </div>
+
+                            <div class="latest__category">
+                                <p>JavaScript</p>
+                            </div>
+                        </div>
+                    </article>
+
+
+                    <article class="latest__blogItem">
+                        <!-- <div class="latest__imgWrapper">
+                        <img class="latest__thumb" src="/assets/thumbs/5.jpg" alt="">
+                    </div> -->
+                        <div class="latest__details">
+                            <div class="latest__date">
+                                <img src="/assets/icons/calendar.svg" alt="">
+                                <p>
+                                    25 Listopada, 2023
+                                </p>
+                            </div>
+                            <div class="latest__readTime">
+                                <img src="/assets/icons/clock.svg" alt="">
+                                <p>
+                                    03 min read
+                                </p>
+                            </div>
+                        </div>
+
+                        <a href="#article-3">
+                            <h4 class="latest__title">Operatory porównania (niejawna konwersja typów podczas
+                                porównania), falsy
+                                values, truthy values
+                            </h4>
+                        </a>
+                        <h5 class="latest__desc">Jak działają operatory porównania i na co musimy uważać podczas
+                            porównywania ze sobą dwóch
+                            wartości.</h5>
+
+                        <div class="latest__about">
+                            <div class="latest__author">
+                                <img src="/assets/icons/user.svg" alt="">
+                                <p>Jakub</p>
+                            </div>
+
+                            <div class="latest__category">
+                                <p>JavaScript</p>
+                            </div>
+                        </div>
+                    </article>
+                </div>
             </section>
-        </main>
-        <section class="latest">
-            <h3 class="latest__header">Ostatnie posty</h3>
-            <div class="latest__blogsWrapper">
-                <article class="latest__blogItem" id="">
-                    <!-- <div class="latest__imgWrapper">
-                        <img class="latest__thumb" src="/assets/thumbs/5.jpg" alt="">
-                    </div> -->
-                    <div class="latest__details">
-                        <div class="latest__date">
-                            <img src="/assets/icons/calendar.svg" alt="">
-                            <p>
-                                25 Listopada, 2023
-                            </p>
-                        </div>
-                        <div class="latest__readTime">
-                            <img src="/assets/icons/clock.svg" alt="">
-                            <p>
-                                03 min read
-                            </p>
-                        </div>
-                    </div>
-                    <a href="#article-1">
-                        <h4 class="latest__title">Operatory porównania (niejawna konwersja typów podczas porównania), falsy
-                            values, truthy values
-                        </h4>
-                    </a>
-                    <h5 class="latest__desc">Jak działają operatory porównania i na co musimy uważać podczas
-                        porównywania ze sobą dwóch
-                        wartości.</h5>
 
-                    <div class="latest__about">
-                        <div class="latest__author">
-                            <img src="/assets/icons/user.svg" alt="">
-                            <p>Jakub</p>
-                        </div>
-
-                        <div class="latest__category">
-                            <p>JavaScript</p>
-                        </div>
-                    </div>
-                </article>
+        </div>
 
 
-                <article class="latest__blogItem">
-                    <!-- <div class="latest__imgWrapper">
-                        <img class="latest__thumb" src="/assets/thumbs/5.jpg" alt="">
-                    </div> -->
-                    <div class="latest__details">
-                        <div class="latest__date">
-                            <img src="/assets/icons/calendar.svg" alt="">
-                            <p>
-                                25 Listopada, 2023
-                            </p>
-                        </div>
-                        <div class="latest__readTime">
-                            <img src="/assets/icons/clock.svg" alt="">
-                            <p>
-                                03 min read
-                            </p>
-                        </div>
-                    </div>
-
-                    <a href="#article-2">
-                        <h4 class="latest__title">Operatory porównania (niejawna konwersja typów podczas porównania), falsy
-                            values, truthy values
-                        </h4>
-                    </a>
-                    <h5 class="latest__desc">Jak działają operatory porównania i na co musimy uważać podczas
-                        porównywania ze sobą dwóch
-                        wartości.</h5>
-
-                    <div class="latest__about">
-                        <div class="latest__author">
-                            <img src="/assets/icons/user.svg" alt="">
-                            <p>Jakub</p>
-                        </div>
-
-                        <div class="latest__category">
-                            <p>JavaScript</p>
-                        </div>
-                    </div>
-                </article>
 
 
-                <article class="latest__blogItem">
-                    <!-- <div class="latest__imgWrapper">
-                        <img class="latest__thumb" src="/assets/thumbs/5.jpg" alt="">
-                    </div> -->
-                    <div class="latest__details">
-                        <div class="latest__date">
-                            <img src="/assets/icons/calendar.svg" alt="">
-                            <p>
-                                25 Listopada, 2023
-                            </p>
-                        </div>
-                        <div class="latest__readTime">
-                            <img src="/assets/icons/clock.svg" alt="">
-                            <p>
-                                03 min read
-                            </p>
-                        </div>
-                    </div>
-
-                    <a href="#article-3">
-                        <h4 class="latest__title">Operatory porównania (niejawna konwersja typów podczas porównania), falsy
-                            values, truthy values
-                        </h4>
-                    </a>
-                    <h5 class="latest__desc">Jak działają operatory porównania i na co musimy uważać podczas
-                        porównywania ze sobą dwóch
-                        wartości.</h5>
-
-                    <div class="latest__about">
-                        <div class="latest__author">
-                            <img src="/assets/icons/user.svg" alt="">
-                            <p>Jakub</p>
-                        </div>
-
-                        <div class="latest__category">
-                            <p>JavaScript</p>
-                        </div>
-                    </div>
-                </article>
-            </div>
+        <section id="about" class=" is-hidden page">
+            <h2>Tutaj kilka linijek o nas</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi sapiente hic ullam quod tempore
+                reiciendis. Corrupti libero quae tenetur amet optio expedita voluptate! Sint delectus veritatis dolor
+                fugit, natus fugiat!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi sapiente hic ullam quod tempore
+                reiciendis. Corrupti libero quae tenetur amet optio expedita voluptate! Sint delectus veritatis dolor
+                fugit, natus fugiat!</p>
         </section>
+
+        <section id="contact" class=" is-hidden page">
+            <h2>Tutaj kilka linijek z tekstem kontaktowym</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi sapiente hic ullam quod tempore
+                reiciendis. Corrupti libero quae tenetur amet optio expedita voluptate! Sint delectus veritatis dolor
+                fugit, natus fugiat!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi sapiente hic ullam quod tempore
+                reiciendis. Corrupti libero quae tenetur amet optio expedita voluptate! Sint delectus veritatis dolor
+                fugit, natus fugiat!</p>
+        </section>
+
+
     </div>
 </body>
 
