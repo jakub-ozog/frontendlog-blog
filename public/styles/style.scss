@@ -1,4 +1,6 @@
 $White: hsl(0, 0%, 100%);
+$LightGrey: hsl(0, 0%, 79%);
+$Grey: hsl(0, 0%, 65%);
 $Black: hsl(0, 0, 0);
 $VueGreen: hsl(153, 47%, 49%);
 
@@ -75,7 +77,21 @@ header {
 .hero {
     text-align: center;
     margin-top: 5rem;
-    font-size: 3rem;
-    font-weight: 800;
-    letter-spacing: -2px;
+    // letter-spacing: -1px;
+
+    &__title {
+        font-size: 3rem;
+        font-weight: 800;
+    }
+
+    &__subtitle {
+        margin-top: .5rem;
+        font-size: 1.25rem;
+        color: $LightGrey;
+        font-weight: 600;
+        
+        span {
+            color: $VueGreen;
+        }
+    }
 }

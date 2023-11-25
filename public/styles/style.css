@@ -56,7 +56,17 @@ header .nav__list a {
 
 .hero {
   text-align: center;
-  margin-top: 5rem;
+  margin-top: 5rem; }
+
+.hero__title {
   font-size: 3rem;
-  font-weight: 800;
-  letter-spacing: -2px; }
+  font-weight: 800; }
+
+.hero__subtitle {
+  margin-top: .5rem;
+  font-size: 1.25rem;
+  color: #c9c9c9;
+  font-weight: 600; }
+
+.hero__subtitle span {
+  color: #42b883; }
