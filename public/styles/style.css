@@ -9,13 +9,17 @@ body {
 
 .container {
   max-width: 1440px;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 1rem; }
+  margin: 0 auto; }
 
 header {
-  padding: 1.5rem 2rem;
-  box-shadow: 0px 5px 0px 0px #8d8d8d0d; }
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 75px;
+  padding: 1rem 2.625rem;
+  box-shadow: 0px 5px 0px 0px #8d8d8d0d;
+  background-color: white; }
 
 header .nav {
   display: flex;
@@ -34,7 +38,7 @@ header .nav__logoWrapper {
   gap: 0.25rem; }
 
 header .nav__logoWrapper h1 {
-  font-size: 2rem;
+  font-size: 1.5rem;
   color: black;
   font-weight: 700; }
 
@@ -42,7 +46,7 @@ header .nav__logoWrapper h1 span {
   color: #42b883; }
 
 header .nav__logo {
-  width: 35px; }
+  width: 30px; }
 
 header .nav__list {
   display: flex;
@@ -56,25 +60,26 @@ header .nav__list a {
 
 .hero {
   text-align: center;
-  margin-top: 5rem; }
+  margin-top: calc(100px + 75px);
+  padding: 3.5rem 0; }
 
 .hero__title {
-  font-size: 3rem;
+  font-size: 3.75rem;
   font-weight: 800; }
 
 .hero__subtitle {
-  margin-top: .5rem;
+  margin: 1rem auto;
   font-size: 1.25rem;
   color: #c9c9c9;
-  font-weight: 600; }
+  font-weight: 600;
+  width: 60%; }
 
 .hero__subtitle span {
   color: #42b883; }
 
 .latest {
   margin-top: 5rem;
-  background-color: #f9f9f9;
-  padding: 1rem; }
+  background-color: #f9f9f9; }
 
 .latest__header {
   font-size: 1.75rem; }
@@ -84,11 +89,11 @@ header .nav__list a {
   grid-template-columns: 1fr 1fr;
   gap: 15px;
   margin-top: 3rem;
-  margin-bottom: 3rem; }
+  margin-bottom: 3rem;
+  padding: 4rem; }
 
 .latest__blogItem {
-  background-color: white;
-  padding: 1rem; }
+  background-color: white; }
 
 .latest__blogItem:nth-child(1) {
   grid-row: 1;

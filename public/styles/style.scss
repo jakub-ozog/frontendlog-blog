@@ -4,6 +4,8 @@ $Grey: hsl(0, 0%, 65%);
 $Black: hsl(0, 0, 0);
 $VueGreen: #42b883;
 
+$HeaderHight: 75px;
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -17,14 +19,19 @@ body {
 
 .container {
     max-width: 1440px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 1rem;
+    margin: 0 auto;
 }
 
 header {
-    padding: 1.5rem 2rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 75px;
+    // padding: 1.5rem 2rem;
+    padding: 1rem 2.625rem;
     box-shadow: 0px 5px 0px 0px #8d8d8d0d;
+    background-color: $White;
 
     .nav {
         display: flex;
@@ -45,7 +52,7 @@ header {
             gap: 0.25rem;
 
             h1 {
-                font-size: 2rem;
+                font-size: 1.5rem;
                 color: $Black;
                 font-weight: 700;
 
@@ -56,7 +63,7 @@ header {
         }
 
         &__logo {
-            width: 35px;
+            width: 30px;
         }
 
         &__list {
@@ -76,19 +83,20 @@ header {
 
 .hero {
     text-align: center;
-    margin-top: 5rem;
-    // letter-spacing: -1px;
+    margin-top: calc(100px + 75px);
+    padding: 3.5rem 0;
 
     &__title {
-        font-size: 3rem;
+        font-size: 3.75rem;
         font-weight: 800;
     }
 
     &__subtitle {
-        margin-top: .5rem;
+        margin: 1rem auto;
         font-size: 1.25rem;
         color: $LightGrey;
         font-weight: 600;
+        width: 60%;
 
         span {
             color: $VueGreen;
@@ -99,7 +107,6 @@ header {
 .latest {
     margin-top: 5rem;
     background-color: #f9f9f9;
-    padding: 1rem;
 
     &__header {
         font-size: 1.75rem;
@@ -113,12 +120,13 @@ header {
         gap: 15px;
         margin-top: 3rem;
         margin-bottom: 3rem;
+        padding: 4rem;
+        
     }
 
 
     &__blogItem {
         background-color: $White;
-        padding: 1rem;
 
         &:nth-child(1) {
             grid-row: 1;
