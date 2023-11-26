@@ -134,7 +134,7 @@ header {
         border: 1px solid #215B63;
         border-radius: 16px;
         padding: 1rem;
-       
+
 
 
         &:nth-child(1) {
@@ -190,12 +190,12 @@ header {
 
     a {
         text-decoration: none;
-        color:unset;
+        color: unset;
         transition: .1s all;
 
         &:hover {
             color: #215B63;
-        }   
+        }
     }
 
     &__title {
@@ -246,6 +246,10 @@ header {
     }
 }
 
-.is-hidden {
+.hidden {
     display: none;
+}
+
+.is-visible {
+    display: block;
 }

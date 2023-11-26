@@ -1,23 +1,26 @@
 
 
-
-
-
-
-
-
-window.addEventListener('hashchange', (e) => {
-    e.preventDefault()
-    const hash = window.location.hash.slice(1);
+function handleHashChange() {
+    const hash = window.location.hash;
     console.log(hash)
-    document.querySelectorAll('.page').forEach(($e) =>{
-        $e.classList.add('is-hidden')
+
+    const sections = document.querySelectorAll('.hidden');
+    sections.forEach(function (section) {
+        section.style.display = 'none'
     })
 
-    document.getElementById(hash).classList.remove('is-hidden')
+//Get specified article
+    if (hash.startsWith('#articles/article-')) {
+        const articleID = hash.slice('#articles/article'.length)
+    }
 
-})
+    const targetSection = document.getElementById(hash.slice(1))
 
+    if (targetSection) {
+        targetSection.style.display = 'block';
+    }
+}
 
+window.addEventListener('hashchange', handleHashChange);
 
-
+handleHashChange();

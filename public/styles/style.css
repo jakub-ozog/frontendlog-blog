@@ -187,5 +187,8 @@ header .nav__list a {
   font-weight: 700;
   font-size: 0.75rem; }
 
-.is-hidden {
+.hidden {
   display: none; }
+
+.is-visible {
+  display: block; }
