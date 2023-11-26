@@ -19,7 +19,7 @@ body {
 
 .container {
     max-width: 1440px;
-    margin: 0 auto;
+    margin: 75px auto;
 }
 
 header {
@@ -134,7 +134,7 @@ header {
         border: 1px solid #215B63;
         border-radius: 16px;
         padding: 1rem;
-       
+
 
 
         &:nth-child(1) {
@@ -190,7 +190,7 @@ header {
 
     a {
         text-decoration: none;
-        color:unset;
+        color: unset;
         transition: .1s all;
 
         &:hover {
@@ -244,4 +244,12 @@ header {
             font-size: 0.75rem;
         }
     }
+}
+
+.hidden {
+    display: none;
+}
+
+.is-visible {
+    display: block;
 }
