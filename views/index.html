@@ -21,7 +21,7 @@
 <body>
     <header>
         <nav class="nav">
-            <a href="/" class="nav__logoWrapper">
+            <a href="#home" class="nav__logoWrapper">
                 <img class="nav__logo" src="/assets/icons/code_blocks_logo.svg" alt="" />
                 <h1>Frontend<span>Log</span></h1>
             </a>
@@ -34,19 +34,19 @@
         </nav>
     </header>
     <div class="container">
-        <div id="home" class="hidden page">
-            <main id="" class="">
+        <div id="home" class="page">
+            <main class="">
                 <section class="hero ">
                     <h1 class="hero__title">Blog o frontendzie i nie tylko!</h1>
                     <h2 class="hero__subtitle">
                         FrontendLog - czyli moja droga do nauki programowania a
                         konkretniej frontendu w formie zwięzłych artykułów.
                         <span>Enjoy!</span>
-                    </h2>
+                    </h2>   
                 </section>
             </main>
 
-            <section id="" class=" latest">
+            <section id="" class="latest section">
                 <h3 class="latest__header">Ostatnie posty</h3>
                 <div class="latest__blogsWrapper">
                     <article id="article" class="latest__blogItem article">
@@ -85,7 +85,7 @@
                             </div>
                         </div>
                     </article>
-                    <article id="article-2" class="latest__blogItem">
+                    <article id="article-2" class="latest__blogItem article">
                         <!-- <div class="latest__imgWrapper">
                         <img class="latest__thumb" src="/assets/thumbs/5.jpg" alt="">
                     </div> -->
@@ -164,13 +164,15 @@
             </section>
         </div>
 
-        <section id="articles" class="hidden">
+
+
+
+        <section id="articles" class="page is-hidden ">
             <h2>Tutaj treść artykułów</h2>
             <div class="latest__blogsWrapper">
-                <article id="article-1" class="latest__blogItem article hidden">
-                    <!-- <div class="latest__imgWrapper">
-                        <img class="latest__thumb" src="/assets/thumbs/5.jpg" alt="">
-                    </div> -->
+              
+                <article id="article-1" class="latest__blogItem article ">
+                   
                     <div class="latest__details">
                         <div class="latest__date">
                             <img src="/assets/icons/calendar.svg" alt="" />
@@ -204,10 +206,8 @@
                     </div>
                 </article>
 
-                <article id="article-2" class="latest__blogItem hidden">
-                    <!-- <div class="latest__imgWrapper">
-                        <img class="latest__thumb" src="/assets/thumbs/5.jpg" alt="">
-                    </div> -->
+                <article id="article-2" class="latest__blogItem ">
+                 
                     <div class="latest__details">
                         <div class="latest__date">
                             <img src="/assets/icons/calendar.svg" alt="" />
@@ -242,10 +242,8 @@
                     </div>
                 </article>
 
-                <article id="article-3" class="latest__blogItem article hidden">
-                    <!-- <div class="latest__imgWrapper">
-                        <img class="latest__thumb" src="/assets/thumbs/5.jpg" alt="">
-                    </div> -->
+                <article id="article-3" class="latest__blogItem article">
+                  
                     <div class="latest__details">
                         <div class="latest__date">
                             <img src="/assets/icons/calendar.svg" alt="" />
@@ -282,7 +280,10 @@
             </div>
         </section>
 
-        <section id="about" class="hidden page">
+
+        
+    
+        <section id="about" class="page ">
             <h2>Tutaj kilka linijek o nas</h2>
             <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi
@@ -298,7 +299,7 @@
             </p>
         </section>
 
-        <section id="contact" class="hidden page">
+        <section id="contact" class="page ">
             <h2>Tutaj kilka linijek z tekstem kontaktowym</h2>
             <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi
@@ -312,7 +313,8 @@
                 tenetur amet optio expedita voluptate! Sint delectus veritatis dolor
                 fugit, natus fugiat!
             </p>
-        </section>
+        </section> 
+        
     </div>
 </body>
 
