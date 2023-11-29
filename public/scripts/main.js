@@ -1,26 +1,9 @@
+window.addEventListener('hashchange', () => {
+    const hash = window.location.hash.slice(1) || 'home'
+    const [page, article] = hash.split('/')
 
-
-function handleHashChange() {
-    const hash = window.location.hash;
-    console.log(hash)
-
-    const sections = document.querySelectorAll('.hidden');
-    sections.forEach(function (section) {
-        section.style.display = 'none'
+    document.querySelectorAll('.page').forEach(item => {
+        item.classList.add('is-hidden')
     })
-
-//Get specified article
-    if (hash.startsWith('#articles/article-')) {
-        const articleID = hash.slice('#articles/article'.length)
-    }
-
-    const targetSection = document.getElementById(hash.slice(1))
-
-    if (targetSection) {
-        targetSection.style.display = 'block';
-    }
-}
-
-window.addEventListener('hashchange', handleHashChange);
-
-handleHashChange();
+    document.getElementById(page).classList.remove('is-hidden')
+})
